@@ -1,0 +1,9 @@
+img {
+    width: 300px;
+    border-radius: 150px;
+    float: left;
+    margin-right: 10px;
+  }
+  .username {
+    font-weight: bold;
+  }
