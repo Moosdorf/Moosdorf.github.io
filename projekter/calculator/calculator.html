@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Calculator</title>
+    <style>
+      .head,
+      .home {
+        text-align: center;
+      }
+
+      .calc {
+        width: 212px;
+        height: 258px;
+        margin: auto;
+        background-image: linear-gradient(to bottom, #345bdb 0%, #bf40bf 100%);
+
+        border: 2px solid;
+      }
+
+      .backgroundcalc {
+        background-image: linear-gradient(to top, #345bdb 0%, #bf40bf 100%);
+      }
+
+      .numbutton,
+      .opbutton,
+      .clearbutton {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 2px;
+      }
+
+      .results {
+        width: 150px;
+      }
+      body {
+        background-color: gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="topbar">
+      <a href="/index.html">Home</a>
+      <a href="/projekter/main.html">Projects</a>
+      <a href="/MyInfo/info.html">Information</a>
+    </div>
+  </body>
+  <body class="backgroundcalc">
+    <h1 class="head">Calculator Application</h1>
+
+    <div class="calc">
+      <form action="" method="post">
+        <input type="text" name="result" id="results" class="results" />
+        <input type="button" value="c" class="clearbutton" /> <br />
+
+        <input type="button" value="7" class="numbutton" name="num" />
+        <input type="button" value="8" class="numbutton" name="num" />
+        <input type="button" value="9" class="numbutton" name="num" />
+        <input type="button" value="*" class="opbutton" name="op" />
+        <br />
+
+        <input type="button" value="4" class="numbutton" name="num" />
+        <input type="button" value="5" class="numbutton" name="num" />
+        <input type="button" value="6" class="numbutton" name="num" />
+        <input type="button" value="/" class="opbutton" name="op" />
+        <br />
+
+        <input type="button" value="1" class="numbutton" name="num" />
+        <input type="button" value="2" class="numbutton" name="num" />
+        <input type="button" value="3" class="numbutton" name="num" />
+        <input type="button" value="-" class="opbutton" name="op" />
+        <br />
+
+        <input type="button" value="0" class="numbutton" name="num" />
+        <input type="button" value="." class="opbutton" name="decimal" />
+        <input type="button" value="=" class="opbutton" name="equals" />
+        <input type="button" value="+" class="opbutton" name="op" /> <br />
+      </form>
+    </div>
+    <h2 style="height: 156px"></h2>
+    <h2>Created by Andreas Moosdorf</h2>
+  </body>
+</html>
