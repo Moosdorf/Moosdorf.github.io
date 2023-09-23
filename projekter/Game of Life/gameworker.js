@@ -1,12 +1,4 @@
-self.addEventListener('stopGame', function (e) {
-    if (e.data === 'startGame') {
-        console.log("start the.. game");
 
-    } else if (e.data === 'stopGame') {
-        console.log("stop the... game");
-
-    }
-});
   let go = true; 
 
   function startGame() {
@@ -15,9 +7,8 @@ self.addEventListener('stopGame', function (e) {
     console.log("start game");
     let iterations = 0;
         function playNextStep() {
-        console.log(go);
-            
-            if (go) {
+
+            if (document.getElementById("auto").innerText == "Stop") {
                 let play = nextStep();
                 iterations++;
     

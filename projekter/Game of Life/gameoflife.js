@@ -9,12 +9,9 @@ function startGame() {
 
 
 function autoGo() {
-    console.log(document.getElementById("auto").innerText);
     if (document.getElementById("auto").innerText == "Stop") {
         document.getElementById("auto").innerText = "Go";
-        console.log("stop..");
         
-        worker = 0;
     } else { // go 
         document.getElementById("auto").innerText = "Stop";
         startGame();
