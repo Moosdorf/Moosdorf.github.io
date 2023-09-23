@@ -25,11 +25,6 @@
         playNextStep();
   }
 
-  function stopGame() {
-    go = false;
-    console.log("stop the game bro");
-  } 
-
 
   function findBoardState() {
     tempGameBoard = [];
