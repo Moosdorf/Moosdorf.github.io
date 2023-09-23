@@ -11,6 +11,10 @@
       type="text/javascript"
       src="/projekter/Game of Life/gameoflife.js"
     ></script>
+    <script
+      type="text/javascript"
+      src="/projekter/Game of Life/gameworker.js"
+    ></script>
 
     <title>Game of Life</title>
   </head>
@@ -166,6 +170,12 @@
         </tr>
       </table>
     </div>
-    <button class="start" onclick="startGame()">Start Game</button>
+
+    <br />
+    <div class="buttonbar">
+      <button class="auto" id="auto" onclick="autoGo()">Go</button>
+      <button class="start" onclick="nextStep()">One step</button>
+      <button class="grid" onclick="toggleGrid()">Toggle grid</button>
+    </div>
   </body>
 </html>
